@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Game: Category Connection</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <header>
+        <h1>Voice Game: Category Connection</h1>
+    </header>
+
+    <main>
+        <section id="game-container">
+            <div id="category-display" aria-live="polite"></div>
+
+            <label for="user-input">Your Answer:</label>
+            <input type="text" id="user-input" aria-label="Enter your answer">
+
+            <button id="submit-button" onclick="checkAnswer()">Submit</button>
+
+            <div id="score-display">Score: 0</div>
+            <div id="error-message" aria-live="assertive"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Voice Game: Category Connection</p>
+    </footer>
+
+    <script src="game.js" defer></script>
+    <script src="../voice.js" defer></script>
+</body>
+</html>

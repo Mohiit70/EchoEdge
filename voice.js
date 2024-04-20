@@ -1,8 +1,6 @@
 // Web Speech API
 if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
-
     var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
-
     recognition.lang = 'en-US'; 
     recognition.interimResults = false; 
 
@@ -11,9 +9,9 @@ if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
         var transcript = event.results[0][0].transcript.toLowerCase();
         console.log('Transcript:', transcript);
 
-        if (transcript.includes('game')) {
+        if (transcript.includes('start game')) {
             startGame();
-        } else if (transcript.includes('resource')) {
+        } else if (transcript.includes('resources')) {
             navigateToResources();
         } else if (transcript.includes('job')) {
             navigateToJob();
@@ -37,6 +35,7 @@ if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
 
 function startGame() {
     console.log('Starting the game...');
+    window.location.href = 'game/game.html'; 
 }
 
 function navigateToResources() {
