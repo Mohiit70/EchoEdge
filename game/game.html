@@ -18,7 +18,7 @@
             <label for="user-input">Your Answer:</label>
             <input type="text" id="user-input" aria-label="Enter your answer">
 
-            <button id="submit-button" onclick="checkAnswer()">Submit</button>
+            <button id="submit-button">Speak</button>
 
             <div id="score-display">Score: 0</div>
             <div id="error-message" aria-live="assertive"></div>
@@ -29,7 +29,10 @@
         <p>&copy; 2024 Voice Game: Category Connection</p>
     </footer>
 
+    <!-- Audio elements for correct and incorrect answers -->
+    <audio id="correct-audio" src="sound/Your answer is correct 1.wav"></audio>
+    <audio id="incorrect-audio" src="sound/Sorry you answer is incor 1.wav"></audio>
+
     <script src="game.js" defer></script>
-    <script src="../voice.js" defer></script>
 </body>
 </html>

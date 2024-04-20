@@ -9,6 +9,9 @@ const categories = {
 let currentCategory = "";
 let score = 0;
 
+const correctSound = new Audio('sound/Your answer is correct 1.wav');
+const incorrectSound = new Audio('sound/Sorry you answer is incor 1.wav');
+
 function displayCategory() {
     const categoryList = Object.keys(categories);
     const categoryIndex = Math.floor(Math.random() * categoryList.length);
@@ -24,8 +27,10 @@ function checkAnswer() {
         document.getElementById("user-input").value = "";
         document.getElementById("error-message").textContent = "";
         displayCategory();
+        correctSound.play(); // Play correct answer sound
     } else {
         document.getElementById("error-message").textContent = "Incorrect answer!";
+        incorrectSound.play(); // Play incorrect answer sound
     }
 }
 
