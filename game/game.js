@@ -19,9 +19,9 @@ function displayCategory() {
     document.getElementById("category-display").textContent = `Category: ${currentCategory}`;
 }
 
-function checkAnswer() {
+function checkAnswer(category) {
     const userInput = document.getElementById("user-input").value.toLowerCase();
-    if (categories[currentCategory].includes(userInput)) {
+    if (categories[category].includes(userInput)) {
         score++;
         document.getElementById("score-display").textContent = `Score: ${score}`;
         document.getElementById("user-input").value = "";
@@ -29,9 +29,22 @@ function checkAnswer() {
         displayCategory();
         correctSound.play(); // Play correct answer sound
     } else {
-        document.getElementById("error-message").textContent = "Incorrect answer!";
+        document.getElementById("error-message").textContent = "Sorry, that's not correct. Please try again.";
         incorrectSound.play(); // Play incorrect answer sound
     }
+}
+
+function restartGame() {
+    score = 0;
+    document.getElementById("score-display").textContent = `Score: ${score}`;
+    document.getElementById("user-input").value = "";
+    document.getElementById("error-message").textContent = "";
+    displayCategory();
+}
+
+function exitGame() {
+    console.log('Exiting the game...');
+    // Your code to exit the game
 }
 
 window.onload = function () {
