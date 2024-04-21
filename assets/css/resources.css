@@ -49,8 +49,8 @@ nav li a {
 }
 
 .container {
-    max-width: 800px;
-    margin: 50px auto;
+    max-width: 1000px;
+    margin: 200px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
