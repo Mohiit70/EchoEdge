@@ -47,3 +47,13 @@ header {
   nav li a {
     padding: 10px;
   }
+
+  .hero-image {
+    background-image: url(/images/EchoEdge.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 100%; 
+    margin-top: 200px;
+}
