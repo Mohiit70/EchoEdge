@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -8,10 +7,10 @@ body {
 }
 
 header, footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #aec9cf;
+    color: #087187;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0; /* Reduced padding */
 }
 
 main {
@@ -30,13 +29,33 @@ main {
     margin-bottom: 20px;
 }
 
+nav {
+    margin-bottom: 10px; /* Added margin to separate navigation from content */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px; /* Adjusted margin */
+}
+
+nav li a {
+    text-decoration: none;
+    color: #087187;
+    font-size: 18px; /* Reduced font size */
+}
+
 label {
     display: block;
     margin-bottom: 10px;
 }
 
 input[type="text"] {
-    padding: 10px;
+    padding: 20px; /* Adjusted padding */
     font-size: 16px;
     width: 100%;
     margin-bottom: 20px;
@@ -71,4 +90,5 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+    padding: 5px 0; /* Reduced padding */
 }
