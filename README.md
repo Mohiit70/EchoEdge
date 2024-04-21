@@ -26,15 +26,18 @@ To clone the EchoEdge application and run it locally on your machine, follow the
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 2](../EchoEdge/images/screenshots/Screenshot%202024-04-21%20120244.png)
+*Caption: Sample gameplay of a voice-activated game on EchoEdge.*
+
+![Screenshot 3](../EchoEdge/images/screenshots/Screenshot%202024-04-21%20120254.png)
 *Caption: EchoEdge homepage with voice-activated game and job portal.*
 
-![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 4](../EchoEdge/images/screenshots/Screenshot%202024-04-21%20120324.png)
 *Caption: Sample gameplay of a voice-activated game on EchoEdge.*
 
 ## Video Demo
 
-Watch a video demo of EchoEdge in action [here](demo/demo.mp4).
+Watch a video demo of EchoEdge in action [here](https://youtu.be/_zVYRHxIFos?si=8pXsiouLHuUk0Da-).
 
 ## Development
 
