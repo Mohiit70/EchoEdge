@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>EchoEdge</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <nav class="sticky-nav">
@@ -14,14 +13,36 @@
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="job.html">Job</a></li>
-                <li><a href="/game/game.html">Games</a></li>
+                <li><a href="#games-section">Games</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="hero-image"></div>
-
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to EchoEdge</h1>
+            <p>Your voice-activated gaming destination.</p>
+            <a href="#games-section" class="hero-button">Explore Games</a>
+        </div>
+    </div>
+    <section id="games-section" class="games-section">
+        <h2>Available Games</h2>
+        <div class="game" id="game1">
+            <h3>Guess the Number</h3>
+            <p>Try to guess the number I'm thinking of between 1 and 100.</p>
+            <button onclick="startGuessTheNumber()">Play</button>
+        </div>
+        <div class="game" id="game2">
+            <h3>Voice Calculator</h3>
+            <p>Give me a calculation and I'll solve it for you.</p>
+            <button onclick="startVoiceCalculator()">Play</button>
+        </div>
+        <div class="game" id="game3">
+            <h3>Animal Sounds Quiz</h3>
+            <p>Guess the animal based on the sound I play.</p>
+            <button onclick="startAnimalSoundsQuiz()">Play</button>
+        </div>
+    </section>
     <script src="../voice.js"></script>
+    <script src="../games.js"></script>
 </body>
-
 </html>

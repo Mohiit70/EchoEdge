@@ -2,38 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice Game: Category Connection</title>
-    <link rel="stylesheet" href="game.css">
+    <title>EchoEdge Games</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Voice Game: Category Connection</h1>
+        <nav class="sticky-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="job.html">Job</a></li>
+                <li><a href="games.html">Games</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <main>
-        <section id="game-container">
-            <div id="category-display" aria-live="polite"></div>
-
-            <label for="user-input">Your Answer:</label>
-            <input type="text" id="user-input" aria-label="Enter your answer">
-
-            <button id="submit-button">Speak</button>
-
-            <div id="score-display">Score: 0</div>
-            <div id="error-message" aria-live="assertive"></div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Voice Game: Category Connection</p>
-    </footer>
-
-    <!-- Audio elements for correct and incorrect answers -->
-    <audio id="correct-audio" src="sound/Your answer is correct 1.wav"></audio>
-    <audio id="incorrect-audio" src="sound/Sorry you answer is incor 1.wav"></audio>
-
-    <script src="game.js" defer></script>
-    <script src="gamevoice.js" defer></script>
+    <div class="games-container">
+        <h2>Select a Game</h2>
+        <div class="games-list">
+            <div class="game-item">
+                <h3>Game 1: Voice Quiz</h3>
+                <button onclick="startGame('voiceQuiz')">Play</button>
+            </div>
+            <div class="game-item">
+                <h3>Game 2: Voice Adventure</h3>
+                <button onclick="startGame('voiceAdventure')">Play</button>
+            </div>
+            <!-- Add more games as needed -->
+        </div>
+    </div>
+    <script src="../voice.js"></script>
+    <script src="../voiceAdventure.js"></script>
+    <script>
+        function startGame(gameName) {
+            if (gameName === 'voiceQuiz') {
+                alert('Starting Voice Quiz!');
+            } else if (gameName === 'voiceAdventure') {
+                window.location.href = "voiceAdventure.html"; 
+            }
+        }
+    </script>
 </body>
 </html>
