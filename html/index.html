@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>EchoEdge</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav class="sticky-nav">
+            <div class="logo">
+                <a href="index.html"><img src="../images/Echo_Edge.png" alt="EchoEdge Logo"></a>
+            </div>
             <ul>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="resources.html">Resources</a></li>
-                <li><a href="job.html">Job</a></li>
+                <li><a href="job.html">Job Portal</a></li>
                 <li><a href="#games-section">Games</a></li>
             </ul>
         </nav>
@@ -29,20 +44,21 @@
         <div class="game" id="game1">
             <h3>Guess the Number</h3>
             <p>Try to guess the number I'm thinking of between 1 and 100.</p>
-            <button onclick="startGuessTheNumber()">Play</button>
+            <a href="../game/guess-the-number.html" class="game-button">Play</a>
         </div>
         <div class="game" id="game2">
             <h3>Voice Calculator</h3>
             <p>Give me a calculation and I'll solve it for you.</p>
-            <button onclick="startVoiceCalculator()">Play</button>
+            <a href="../game/Voice Calculator.html" class="game-button">Play</a>
         </div>
         <div class="game" id="game3">
             <h3>Animal Sounds Quiz</h3>
             <p>Guess the animal based on the sound I play.</p>
-            <button onclick="startAnimalSoundsQuiz()">Play</button>
+            <a href="../game/animal quiz.html" class="game-button">Play</a>
         </div>
     </section>
     <script src="../voice.js"></script>
-    <script src="../games.js"></script>
+    <script src="games.js"></script>
 </body>
+
 </html>
